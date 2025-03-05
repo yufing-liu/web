@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>表單</title>
+  </head>
+  <body>
+    <form>
+      <fieldset>
+        <legend>個人資料</legend>
+        <label for="username">姓名：</label>
+        <input type="text" id="username"><br>
+        <label for="useraddr">地址：</label>
+        <input type="text" id="useraddr"><br>        
+	  </fieldset>
+	  <fieldset>
+        <legend>行程相關</legend>
+        何處得知行程：(可複選)
+        <input type="checkbox" name="source[]" value="s1">公車廣告
+        <input type="checkbox" name="source[]" value="s2">網站廣告
+		<input type="checkbox" name="source[]" value="s3">Google搜尋<br>
+        參加本行程是：(單選)
+        <input type="radio" name="reason" value="r1">個人旅遊
+        <input type="radio" name="reason" value="r2">蜜月旅遊
+		<input type="radio" name="reason" value="r3">家庭旅遊
+        <input type="radio" name="reason" value="r4">員工旅遊<br>
+        其它行程建議：<textarea name="suggestion" cols="40" rows="4">其它需求或建議可以寫在此</textarea> 
+	  </fieldset>
+      <input type="submit">
+      <input type="reset">	  
+    </form>
+  </body>
+</html>
